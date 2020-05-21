@@ -1,0 +1,12 @@
+{
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 2000,
+    "editor.wordWrap": "on",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "workbench.editor.highlightModifiedTabs": true,
+    "explorer.sortOrder": "type",
+    "editor.cursorStyle": "block",
+    "editor.cursorBlinking": "smooth",
+    "files.trimFinalNewlines": true
+}
