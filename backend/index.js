@@ -20,8 +20,8 @@ const app = express();
 *   Route Params: Parâmetros utilizados para identificar recursos "req.params"
 *   Request Body:
 */
-app.get("/users", (req, res) => {
-    const params = req.query;
+app.get("/users/:id", (req, res) => {
+    const params = req.params;
 
     console.log(params)
     return res.json({
