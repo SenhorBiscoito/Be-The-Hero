@@ -1,7 +1,10 @@
 const express = require("express");
+const routes = require("./routes");
+
 const app = express();
 
 app.use(express.json());
+app.use(routes);
 /*
 *  Rota / Recurso
 */
@@ -21,14 +24,17 @@ app.use(express.json());
 *   Route Params: Parâmetros utilizados para identificar recursos "req.params"
 *   Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
 */
-app.post("/users", (req, res) => {
-    const body = req.body;
 
-    console.log(body)
-    return res.json({
-        evento: "Semana OmniStack 11.0",
-        aluno: "Cleiton Souza"
-    })
-});
+/* 
+*   SQL: MySQL, SQLite, PostgreSQL, Oracle, Microsoft SQL Server
+*   NoSQL: MongoDB, CouchDB, etc
+*   Vamos usar o *SQLite*
+*/
+
+/* 
+*   Driver: SELECT * FROM users
+*   Query Builder: table("users").select("*").where();
+*/
+
 
 app.listen(3333);
